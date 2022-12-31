@@ -104,11 +104,16 @@ span:not([span-type="inline"]) {
 /* ===Navbar style starts here=== */
 .main-header {
   background-color: var(--clr-primary-gray-light);
+  transition: all 0.3s linear;
 }
 .cst-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.main-header.active {
+  position: fixed;
+  width: 100%;
 }
 .global-brand {
   text-decoration: none;
